@@ -1,0 +1,103 @@
+Getting User Input 
+
+Module Program
+    Sub Main()
+        Dim userName As String = Nothing
+        Dim userAge As Integer = Nothing
+        Dim userSalary As Double = Nothing
+        Console.WriteLine("What is your name?")
+        userName = Console.ReadLine()
+        Console.WriteLine("What is your age?")
+        userAge = Console.ReadLine()
+        Console.WriteLine("What is your salary?")
+        userSalary = Console.ReadLine()
+        Console.ReadLine()
+
+    End Sub
+End Module
+______
+Output
+
+What is your name?
+Sina
+What is your age?
+21
+What is your salary?
+5000000
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Imports System
+
+Module Program
+    Sub Main()
+        Dim userName As String = Nothing
+        Dim userAge As Integer = Nothing
+        Dim userSalary As Double = Nothing
+        Console.WriteLine("What is your name?")
+        userName = Console.ReadLine()
+        Console.WriteLine("What is your age?")
+        userAge = Console.ReadLine()
+        Console.WriteLine("What is your salary?")
+        userSalary = Console.ReadLine()
+        Console.Write("Your name is: " & userName)
+        Console.Write("  Your age is: " & userAge)
+        Console.Write("  Your salary is: " & userSalary)
+        Console.WriteLine()
+        Console.ReadLine()
+
+    End Sub
+End Module
+_________
+Output
+
+What is your name?
+Sina
+What is your age?
+21
+What is your salary?
+5000000
+Your name is: Sina Your age is:21 Your salary is: 5000000
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module Program
+	Sub Main(args As String())
+		Dim trump As String = Nothing,
+			   Hilary As String = Nothing
+		Dim wafflefactor As Boolean = False
+
+		Console.WriteLine(“Did you vote for trump? (enter yes or no)”)
+		trump = Console.ReadLine()
+		Console.WriteLine(“Did you vote for hilary? (enter yes or no)”)
+		Hilary = Console.ReadLine()
+		'See this line?
+		Console.WriteLine(“OK your response is “ & trump & “ “ & Hilary)
+		' These give lines do the same exact output
+		Console.WriteLine(“on one line”)
+		Console.Write(Hilary)
+		Console.Write(trump)
+		Console.WriteLine()
+		' These three lines, put the yes and no on separate lines
+		Console.WriteLine(“on two lines”)
+		Console.WriteLine(Hilary)
+		Console.WriteLine(trump)
+
+		Console.ReadLine() ' Stop the console window from shutting down
+		REM Console.WriteLine(“Hello World! “ & result)
+	End Sub
+End Module
+______
+Output
+
+Did you vote for trump? (enter yes or no)
+no
+Did you vote for hilary? (enter yes or no)
+no
+OK your response is no no
+on one line
+nono
+on two lines
+no
+no
+
+C:\Users\sev10\source\repos\ConsoleApp2 Class 6.24\ConsoleApp2 Class 6.24\bin\Debug\netcoreapp3.1\ConsoleApp2 Class 6.24.exe (process 21216) exited with code -1.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
