@@ -1,0 +1,133 @@
+Module Module 1
+		Sub Main() 
+			Dim a As Double = 7.7
+			Dim b As Integer = 5
+			Dim label As String = “Sum is ”
+			Console.WriteLine(label & (a+b))
+			Console.ReadLine()  
+		End Sub
+	End Module 
+  
+Module Module 1
+Sub Main()
+	Dim x As Integer = 14,
+	   Y As Integer = 7,
+	   Z As Integer = 4
+	Dim label As String = “Sum is ”
+	Console.WriteLine(label & (x + Y + Z))
+	Console.ReadLine()
+End Sub
+	End Module
+  
+Module Module 1
+	Sub Main()
+		Dim x As Integer = 14,
+		   Y As Integer = 7,
+		   Z As Integer = 4
+		Dim label As String = “Sum is ”
+		Console.WriteLine(label & (x + Y + Z))
+		Console.Write(x & "+" & Y & "+" & Z & "=" & (x + Y + Z))
+		Console.ReadLine()
+	End Sub
+	End Module
+
+Module Program
+Sub Main()
+Dim a As Integer = 7
+		Dim b As Integer = 2
+		Dim label1 As String = "Product is  "
+		Console.WriteLine(label1 & (a * b))
+		Console.Write(label1 & “a double of my favorite number”)
+		Console.ReadLine()
+	End Sub
+End Program
+	
+Module Program
+		Sub Main()
+			Dim a As Integer = 44
+			Dim b As Integer = 22
+			Dim result As Boolean = True
+			result = (a > b)
+			Console.WriteLine(“a = 44 ”)
+			Console.WriteLine(“b = 22 ”)
+			Console.WriteLine(" a>b")
+			Console.WriteLine(result)
+			Console.ReadLine()
+		End Sub
+
+	End Program
+
+Module Module 1
+Sub Main()
+	Dim x As Integer = 77,
+	       y As Integer = 77
+	Dim result As Boolean = True
+	result = (x = y) And (x) And (y)
+	Console.Write("x=77" & vbNewLine & "y=77" & vbNewLine & "x=y" & vbNewLine & “This is the result: “ & result)
+Console.ReadLine()
+End Sub
+	End Module
+
+Module Program
+Sub Main()
+		Dim x As Integer = 44, y As Integer = 8
+		Console.WriteLine("x = 44")
+		Console.WriteLine("y = 4")
+		Console.WriteLine(“x > y : “ & (x > y)) 'true
+	Console.WriteLine(“x < y : “ & (x < y)) 'false
+		Console.ReadLine()
+End Sub
+End Program 
+
+ Module Module 1
+Sub Main()
+			Dim cake As String = Nothing
+			Console.WriteLine(“Do you like cake? (enter yes or no)”)
+			cake = Console.ReadLine()
+
+			If cake = "yes" Then
+				Console.WriteLine(“OK, I will bake you a cake”)
+			Else
+				Console.WriteLine("Sadly I cannot bake you a cake")
+			End If
+		Console.ReadLine()
+	End Sub
+
+	End Module
+  
+Module Program
+Sub Main()
+	Dim userAddress As String = Nothing 
+	Dim userBirthday As String = Nothing
+	Dim userEmail As String = Nothing
+	Console.WriteLine(“What is your address?”)
+	userAddress = Console.ReadLine()
+	Console.WriteLine(“What is your birthday?”)
+	userBirthday = Console.ReadLine()
+	Console.WriteLine(“What is your email?”)
+	userEmail = Console.ReadLine()
+	Console.Write(“Your address is: “ & userAddress)
+	Console.Write(“ Your birthday is: “ & userBirthday)
+	Console.Write(“ Your email is: “ & userEmail)
+End Sub
+	End Program 
+  
+Module Program
+  Sub Main()
+	Console.WriteLine(“Please answer the following security questions.”)
+	Console.WriteLine(“What is your favorite dessert?”)
+	Dim userDessert As String = Console.ReadLine()
+	Console.WriteLine(“What is your favorite name?”)
+	Dim userBabyName As String = Console.ReadLine()
+	If userDessert = “cake” Then
+		Console.WriteLine(“You have been granted access.”)
+	End If
+	If userBabyName = “Sebastien” Then
+		Console.WriteLine(“You have been granted access.”)
+	Else
+		Console.WriteLine(“Access denied. Incorrect answer(s).”)
+	End If
+	Console.ReadLine()
+End Sub
+
+	End Module
