@@ -131,3 +131,68 @@ Module Program
 End Sub
 
 	End Module
+____________________________________________________________________________________
+Output
+
+Sum is 12.7
+
+Sum is 25
+
+Sum is 25
+14+7+4=25
+
+Product is  14
+Product is  a double of my favorite number
+
+a = 44
+b = 22
+ a>b
+True
+
+x = 77
+y=77
+x=y
+This is the result: True
+
+x = 44
+y = 4
+x > y : True
+x < y : False
+
+
+Output 1
+Do you like cake? (enter yes or no)
+Yes
+OK, I will bake you a cake
+thank you!
+Output 2
+Do you like cake? (enter yes or no)
+no
+Sadly I cannot bake you a cake
+:(
+
+What is your address?
+Malibu, CA
+What is your birthday?
+October 1 1998
+What is your email?
+sev1017@outlook.com
+Your address is: Malibu, CA Your birthday is: October 1 1998 Your email is: sev1017@outlook.com
+ 
+Output 1
+Please answer the following security questions.
+What is your favorite dessert?
+cake
+What is your favorite name?
+Sebastien
+You have been granted access.
+You have been granted access.
+Output 2
+Please answer the following security questions.
+What is your favorite dessert?
+banana pudding
+What is your favorite name?
+Azula
+Access denied. Incorrect answer(s).
+
+
