@@ -1,0 +1,108 @@
+CODE
+Imports System
+
+Module Program
+	Sub Game()
+
+		Dim num As Double
+		Dim tries As Integer = 3
+		Dim maxtries As Integer = 3
+		Static Dim games As Integer = 0
+		Console.Write(“You have “ & CStr(tries) & “ tries.”)
+
+		While tries > 0
+			If tries = maxtries Then
+				games = games + 1
+			End If
+			Console.WriteLine(“ Choose a number between 1-77.”)
+			num = Console.ReadLine()
+			If (num <= 40) Then
+				Console.WriteLine(“you’re far away from the dealer’s number.”)
+			ElseIf ((num <= 70) And (num >= 41)) Then
+				Console.WriteLine(“you are getting very close to the dealer’s number.”)
+			ElseIf (num <= 76 And num >= 71) Then
+				Console.WriteLine(“you are EXTREMELY close to the dealer’s number!”)
+			ElseIf (num > 77) Then
+				Console.WriteLine("YOU ARE OUT OF BOUNDS.")
+			End If
+			tries = tries - 1
+
+			If (num = 77) Then
+				Console.WriteLine(“YOU’VE WON THE GRAND PRIZE”)
+				Console.WriteLine(“It took you “ & CStr(maxtries - tries) & “ to guess the dealer’s number”)
+				Console.WriteLine("Player stats")
+				Console.WriteLine("Number of guesses it took to guess the dealer's number: " & CStr(maxtries - tries))
+				Console.WriteLine("Number of times you played: " & games)
+				Exit While
+			End If
+			Console.WriteLine(“You have “ & CStr(tries) & " left.")
+		End While
+
+		Dim answer As String
+
+		If tries = 0 Then
+			Console.WriteLine("You ran out of guesses. Try again? Y or N?")
+			answer = Console.ReadLine()
+			If answer = "y" Then
+				Game()
+
+			Else
+				Console.WriteLine("You'll be back.")
+
+			End If
+		End If
+
+
+	End Sub
+	Sub Main()
+		Game()
+		While True
+			Console.WriteLine("Play Again? Y or N")
+		Dim response As String
+		response = Console.ReadLine()
+			If (response = "y") Then
+				Game()
+			Else
+				Exit While
+			End If
+		End While
+	End Sub
+
+End Module
+____________________________________________________________________________
+OUTPUT
+
+You have 3 tries. Choose a number between 1-77.
+ 12
+you are far away from the dealer's number.
+You have 2 guesses left.
+ Choose a number between 1-77.
+45
+you are getting very close to the dealer's number.
+You have 1 guesses left.
+ Choose a number between 1-77.
+73
+you are EXTREMELY close to the dealer's number!
+You have 0 guesses left.
+You ran out of guesses. Try again? Y or N?
+y
+You have 3 tries. Choose a number between 1-77.
+25
+you are far away from the dealer's number.
+You have 2 guesses left.
+ Choose a number between 1-77.
+77
+YOU'VE WON THE GRAND PRIZE
+It took you 2 tries to guess the dealer's number
+PLAYER STATS
+Number of guesses it took to guess the dealer's number: 2
+Number of times you played: 2
+Play Again? Y or N?
+n
+
+
+
+
+	
+
+
