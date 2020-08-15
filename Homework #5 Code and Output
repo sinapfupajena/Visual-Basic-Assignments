@@ -1,0 +1,20 @@
+CODE
+Imports System
+Imports System.IO
+
+Module Program
+    Sub Main()
+        Dim writer As StreamWriter =
+                New StreamWriter("myfile.txt")
+        writer.WriteLine("Introducing the Novel of the Century ")
+        writer.WriteLine("How much wood could a wood chucker chuck if a wood chucker would chuck wood")
+        writer.WriteLine("The answer is all the wood")
+        writer.Close()
+    End Sub
+
+End Module
+
+OUTPUT
+
+
+
