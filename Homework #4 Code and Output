@@ -1,0 +1,97 @@
+CONSTANT EXAMPLE
+
+Public Class Form1
+
+    Private Const ANGEL As Integer = 7
+
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        MessageBox.Show(ANGEL)
+    End Sub
+
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        MessageBox.Show(ANGEL)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        MessageBox.Show(ANGEL)
+    End Sub
+
+End Class
+
+
+
+_____
+OUTPUT
+
+
+
+ARRAY EXAMPLE
+
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAddArray.Click
+        clearList()
+
+        Dim strClasses(5) As String
+
+        strClasses(0) = "~Spinach, bacon, & cheese omelette"
+        strClasses(1) = "~Bacon & egg bagel sandwich"
+        strClasses(2) = "~Greek vanilla yogurt with granola, strawberries & blueberries"
+        strClasses(3) = "Sides:"
+        strClasses(4) = "~Bowl of fruit: mango, papaya, and pineapple"
+        strClasses(5) = "~Hash browns with or without cheese"
+
+        For num As Integer = 0 To strClasses.Length - 1
+            ListArrays.Items.Add(strClasses(num))
+        Next
+    End Sub
+
+    Private Sub clearList()
+        ListArrays.Items.Clear()
+    End Sub
+
+End Class
+_____
+OUTPUT
+
+
+
+
+
+ARRAY LIST EXAMPLE 
+CODE
+
+Module Program
+
+	Sub Main(args As String())
+		Dim myname As New ArrayList
+
+		myname.Add(“Howard”)
+		myname.Add(“Annalyn”)
+		myname.Add(“Sina”)
+		myname.Add(“Sanjay”)
+		myname.Add(“Sayiid”)
+
+		Console.WriteLine(“Here are the names of your immediate family members, in 
+order of age, including you:”)
+		For Each item As String in myname
+			Console.WriteLine(item)
+		Next
+	End Sub
+
+End Module
+________
+OUTPUT
+
+Here are the names of your immediate family members, in
+order of age, including you:
+Howard
+Annalyn
+Sina
+Sanjay
+Sayiid
