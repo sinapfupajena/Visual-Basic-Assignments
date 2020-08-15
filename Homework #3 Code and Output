@@ -1,0 +1,105 @@
+Homework #3 Code and Output: GUI function example, and Quiz 1 Expanded
+FUNCTIONS #1 - GUI
+
+Public Class Form1
+    Private Sub btnRunFunction_Click(sender As Object, e As EventArgs) Handles btnRunFunction.Click
+        Dim answer As Double = solveMath()
+        MessageBox.Show(solveMath())
+    End Sub
+
+    Private Function solveMath() As Double
+        Dim num1 As Integer = 42
+        Dim num2 As Integer = 7
+        Return num1 / num2
+    End Function
+End Class
+____
+OUTPUT - GUI 
+
+
+2 MORE FUNCTIONS, 3 SUBROUTINES, PARAMETERS
+CODE
+
+Module Program
+	Sub Main()
+		Console.WriteLine(“I am the Quantitative Magic 8 Ball”)
+		Console.WriteLine(“Ask me questions that have numbers as answers, such as ‘How 
+many goats does my neighbor own?’”)
+		Console.WriteLine("The amount of questions you ask is unlimited. Press 'e' to exit.")
+		Do
+			Dim r As System.Random = New System.Random
+			Dim count As Integer = 0
+			Static Dim userInput As String
+			Dim lowerbound As Integer = 0
+			Dim upperbound As Integer = 50
+
+			Dim randomNumber As Integer
+			randomNumber = Int(2 + Rnd() * (50 - 2 + 1))
+
+
+			Console.WriteLine("Ask me a question.")
+			userInput = Console.ReadLine()
+
+			Int(lowerbound + Rnd() * (upperbound - lowerbound + 1))
+			Console.WriteLine(randomNumber)
+
+			If userInput = "e" Then
+				Predict()
+
+			End If
+		Loop
+
+
+
+
+	End Sub
+	Private Function guess() As Integer
+		Dim n As System.Random = New System.Random
+		Dim num As Integer
+		num = n.Next(1, 20)
+		Return num
+	End Function
+	Sub Predict()
+		Dim x As Integer
+		Dim userinput As String
+		x = guess()
+		Console.WriteLine("Is this how many times you asked me a question? " & x)
+		Console.WriteLine("y or n?")
+		Console.ReadLine()
+		If userinput Is "y" Then
+			Main()
+		Else
+			Console.WriteLine("OK. Let's go again.")
+
+		End If
+
+
+	End Sub
+End Module
+
+
+OUTPUT
+
+I am the Quantitative Magic 8 Ball
+Ask me questions that have numbers as answers, such as `How
+many goats does my neighbor own?'
+The amount of questions you ask is unlimited. Press 'e' to exit.
+Ask me a question.
+how old are you?
+36
+Ask me a question.
+how old am i?
+30
+Ask me a question.
+how many classes are you taking?
+16
+Ask me a question.
+e
+2
+Is this how many times you asked me a question? 7
+y or n?
+n
+OK. Let's go again.
+Ask me a question.
+
+
