@@ -131,10 +131,11 @@ Console.WriteLine("My num is" & num)
 
 My num is 100 
 
-Module Program
-  Sub Main()
+<p>Module Program</p>
+ <div> Sub Main()
   Dim x As Integer
   Dim y As integer
   x = 100
   y = 200
   COnsole.WriteLine('x is"&x)
+  </div>
